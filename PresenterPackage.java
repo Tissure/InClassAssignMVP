@@ -10,7 +10,7 @@ import modelpackage.IRepository;
 import modelpackage.ModelPackage;
 
 public class PresenterPackage {
-    IRepository repo = new ModelPackage();
+    IRepository repo = modelpackage.getInstance();
 
     public String GetFiles(String input) throws Exception {
         String[] dates = input.split(",");
